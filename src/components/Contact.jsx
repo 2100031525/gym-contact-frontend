@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const {data} = await axios.post("https://gym-contact-backend.vercel.app/send/mail", {name, email, message
+      const {data} = await axios.post("https://gym-contact-backend.onrender.com/send/mail", {name, email, message
       }, {withCredentials: true, headers: {"content-Type": "application/json"}
     }
   );
